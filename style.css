@@ -1,0 +1,338 @@
+:root {
+  --primary-blue: #6EC1E4;
+  --secondary-blue: #BEE9F7;
+  --dark-blue: #2C7DA0;
+  --light-bg: #F5FBFE;
+  --text-dark: #033649;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  background: var(--light-bg);
+  color: var(--text-dark);
+  padding-top: 70px; 
+
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: var(--primary-blue);
+  color: white;
+  height: 80px;              
+  padding: 0 40px; 
+  position: fixed;   
+  top: 0;
+  left: 0;
+  width: 100%;       
+  z-index: 1000;
+}
+
+/* Logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  font-size: 34px;    
+  font-weight: bold;
+  line-height: 1;   
+  height: 100%;  
+}
+
+/* Logo image */
+.logo img {
+  width: 80px;       
+  height: auto;      
+  
+}
+
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 50px;     
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  background: url("https://static.vecteezy.com/system/resources/previews/003/173/911/non_2x/woman-spraying-and-wiping-glass-free-photo.JPG") no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 110px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  background: white;
+  color: var(--dark-blue);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section.light {
+  background: var(--secondary-blue);
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(44,125,160,0.15);
+}
+
+/* ABOUT */
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+/* CONTACT */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 12px;
+  background: var(--dark-blue);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+  background: var(--dark-blue);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.footer-logo {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(44,125,160,0.25);
+}
+
+.card h3 {
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.hero button:hover {
+  background: var(--secondary-blue);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  color: white;
+  font-size: 28px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  background: #1ebe5b;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.price-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(44,125,160,0.15);
+}
+
+.price-card h1 {
+  color: var(--dark-blue);
+}
+
+.price-card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: var(--primary-blue);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.featured {
+  border: 3px solid var(--dark-blue);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white;           
+  margin: 0 10px;
+  font-size: 24px;     
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #6EC1E4;         
+}
+
+.chatbot-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366; 
+  color: white;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+footer .contact-details p {
+  margin: 3px 0;
+}
+
+footer .contact-details a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .contact-details a:hover {
+  text-decoration: underline;
+}
+
+.chatbot-float:hover {
+  background: #1ebe5b;
+  transform: scale(1.1);
+}

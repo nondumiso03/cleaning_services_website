@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NeatNest Services</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAV BAR -->
+<header>
+<div class="logo">
+  <img src="images/neatnest.png" alt="NeatNest Services Logo" style="height:70px; width:78px; margin-right:10px;">
+
+  <span>NeatNest Cleaning Services</span>
+</div>
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="login.html">LOGIN</a>
+    <a href="#services">SERVICES</a>
+    <a href="#about">ABOUT US</a>
+    <a href="#contact-footer">CONTACT US</a>
+    <a href="#contact">BOOK US</a>
+
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <h1>Where a clean place feels like home</h1>
+  <p>Professional, reliable and affordable cleaning services for homes and businesses.</p>
+  <button onclick="scrollToContact()">CONTACT US</button>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>🏠 Home Cleaning</h3>
+      <p>Weekly, bi-weekly, and once-off deep cleaning for your home.</p>
+    </div>
+    <div class="card">
+      <h3>🏢 Office Cleaning</h3>
+      <p>Keep your workspace clean, healthy and professional.</p>
+    </div>
+    <div class="card">
+      <h3>🧽 Deep Cleaning</h3>
+      <p>Intensive cleaning for kitchens, bathrooms and move-in/out jobs.</p>
+    </div>
+    <div class="card">
+      <h3>🪟 Window Cleaning</h3>
+      <p>Crystal-clear windows that brighten your space.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section light">
+  <h2>Why Choose NeatNest Services?</h2>
+  <p>
+    At NeatNest Services, we take pride in delivering top-quality cleaning with close
+    attention to detail. Our friendly, trained team uses eco-friendly products and
+    modern equipment to ensure your space is spotless, fresh and welcoming.
+  </p>
+  <ul>
+    <li>✔ Trusted & professional staff</li>
+    <li>✔ Affordable and transparent pricing</li>
+    <li>✔ Satisfaction guaranteed</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>GET IN TOUCH</h2>
+  <form action="thank-you.html" method="get">
+    <input type="text" placeholder="Your Name" required>
+    <input type="date" required>
+    <input type="time" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="tel" placeholder="Your Phone Number" required>
+    <textarea placeholder="Tell us what you need cleaned..." required></textarea>
+    <button type="submit">Send Request</button>
+  </form>
+</section>
+
+<section class="section light">
+  <h2>Our Pricing</h2>
+
+  <div class="pricing">
+    <div class="price-card">
+      <h3>Basic Clean</h3>
+      <h1>R350</h1>
+      <p>• Living areas<br>• Kitchen<br>• Bathroom</p>
+      <button>Book Now</button>
+    </div>
+
+    <div class="price-card featured">
+      <h3>Standard Clean</h3>
+      <h1>R600</h1>
+      <p>• Full house<br>• Windows inside<br>• Dusting</p>
+      <button>Most Popular</button>
+    </div>
+
+    <div class="price-card">
+      <h3>Deep Clean</h3>
+      <h1>R950</h1>
+      <p>• Deep kitchen<br>• Bathrooms<br>• Move-in/out</p>
+      <button>Book Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact-footer">
+  <div class="social-icons">
+    <a href="https://wa.me/+27832365521" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.linkedin.com/in/nondumiso-xulu-566190346/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/feed/you" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.tiktok.com/@nondumiso4799?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.facebook.com/neatnest.co.za" target="_blank"><i class="fab fa-facebook"></i></a>
+  </div>
+
+  <div class="contact-details">
+      <h3>CONTACT US</h3>
+      <p>📞 Phone: <a href="tel:+27832365521">+27 83 236 5521</a></p>
+      <p>📧 Email: <a href="mailto:info@neatnest.co.za">info@neatnest.co.za</a></p>
+      <p> Address: 123 Main Street, Durban, South Africa</p>
+    </div>
+  </div>
+
+  <p>© 2025 NeatNest Services | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+<a href="https://ask-ai/+27832365521" class="chatbot-float" target="_blank">
+  <i class="fas fa-robot"></i>
+</a>
+</body>
+</html>
